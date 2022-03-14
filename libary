@@ -1,4 +1,4 @@
--- Feel free to edit, modify or use!
+
 
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
@@ -1535,59 +1535,3 @@ function Library:NewWindow(name)
 
     return Sections
 end
-
---[[
-local PhantomForcesWindow = Library:NewWindow("Phantom Forces")
-
-local MainCheatsSection = PhantomForcesWindow:NewSection("Main Cheats")
-
-MainCheatsSection:CreateToggle("No Recoil", function(enabled)
-	if enabled then 
-		print(enabled)
-	elseif not enabled then
-		print(enabled)
-	end
-end)
-
-MainCheatsSection:CreateSlider("Walkspeed", 16, 125, 50, false, function()
-end)
-
-
-MainCheatsSection:CreateColorPicker("Gun Color", Color3.fromRGB(235, 64, 52), function(GunColor)
-    game:GetService("Workspace").goatraptors.Head.Color = GunColor
-end)
-
-MainCheatsSection:CreateColorPicker("Crosshair Color", Color3.fromRGB(255, 176, 79), function()
-end)
-
-MainCheatsSection:CreateColorPicker("Knife Color", Color3.fromRGB(53, 252, 193), function()
-end)
-
-MainCheatsSection:CreateButton("Break All Windows", function()
-    print'Broke all the windows!'
-end)
-
-MainCheatsSection:CreateTextbox("Ammo Amount", function(AmmoAmount)
-    print(AmmoAmount)
-end)
-
-MainCheatsSection:CreateDropdown("Guns", {"AK12", "Intervention", "AP Pistol"}, 2, function(Guns)
-    if Guns == "AK12" then
-        print'b-bb-b-b-bb-bb-b-b- bang!!!!!'
-    elseif Guns == "Intervention" then
-        print'big boi pew pew.'
-    elseif Guns == "AP Pistol" then
-        print'handheld weapon'
-    end
-end)
-
-MainCheatsSection:CreateDropdown("Meele", {"Knife", "Bow Knife", "Hammer", "Bat", "Lightsaber", "Butterfly Knife"}, 5, function(Meele)
-    if Meele == "Knife" then
-        print'shingg'
-    elseif Meele == "Boom" then
-        print'owweeee.'
-    elseif Meele == "Lightsaber" then
-        print'nyaaaa wera wera werrr werrrr.'
-    end
-end)
-]]
